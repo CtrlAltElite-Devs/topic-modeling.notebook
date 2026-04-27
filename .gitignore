@@ -1,0 +1,63 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Data (keep structure, ignore large files)
+data/*.npy
+data/*.csv
+data/*.json
+!data/.gitkeep
+
+# Run artifacts (local only)
+runs/*
+!runs/.gitkeep
+
+# Figures (local only)
+figures/*
+!figures/.gitkeep
+
+# Model cache
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+_check.ipynb
