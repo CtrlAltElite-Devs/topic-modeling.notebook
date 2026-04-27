@@ -1,0 +1,8 @@
+{
+  "min_topic_size": 15,
+  "nr_topics": 20,
+  "umap_n_neighbors": 20,
+  "umap_n_components": 10,
+  "hdbscan_min_samples": 5,
+  "use_keybert": true
+}

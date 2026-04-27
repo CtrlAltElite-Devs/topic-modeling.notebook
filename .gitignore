@@ -42,14 +42,6 @@ data/*.csv
 data/*.json
 !data/.gitkeep
 
-# Run artifacts (local only)
-runs/*
-!runs/.gitkeep
-
-# Figures (local only)
-figures/*
-!figures/.gitkeep
-
 # Model cache
 .cache/
 

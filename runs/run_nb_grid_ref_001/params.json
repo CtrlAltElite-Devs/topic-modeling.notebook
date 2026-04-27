@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 10,
+  "nr_topics": null,
+  "umap_n_neighbors": 15,
+  "umap_n_components": 5,
+  "hdbscan_min_samples": 5,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_001",
+  "rationale": "Run 001 \u2014 BERTopic defaults (narrow UMAP, no merge, small clusters)"
+}

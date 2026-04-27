@@ -1,0 +1,11 @@
+{
+  "embedding_coherence": 0.5866,
+  "npmi_coherence": 0.0,
+  "topic_diversity": 0.9474,
+  "outlier_ratio": 0.3604,
+  "num_topics": 19,
+  "silhouette_score": 0.0373,
+  "total_documents": 7068,
+  "outlier_count": 2547,
+  "composite_score": 0.5973
+}

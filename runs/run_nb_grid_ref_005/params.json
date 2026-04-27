@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 20,
+  "nr_topics": 15,
+  "umap_n_neighbors": 15,
+  "umap_n_components": 5,
+  "hdbscan_min_samples": 8,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_005",
+  "rationale": "Run 005 \u2014 target 15 topics, larger min_topic_size"
+}

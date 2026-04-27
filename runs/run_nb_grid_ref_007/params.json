@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 30,
+  "nr_topics": 10,
+  "umap_n_neighbors": 15,
+  "umap_n_components": 5,
+  "hdbscan_min_samples": 10,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_007",
+  "rationale": "Run 007 \u2014 aggressive reduction to 10 topics, very large clusters"
+}

@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 10,
+  "nr_topics": 20,
+  "umap_n_neighbors": 15,
+  "umap_n_components": 5,
+  "hdbscan_min_samples": 5,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_002",
+  "rationale": "Run 002 \u2014 defaults + nr_topics=20 (force hierarchical merge)"
+}

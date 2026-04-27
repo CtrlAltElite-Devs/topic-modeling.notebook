@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 25,
+  "nr_topics": null,
+  "umap_n_neighbors": 20,
+  "umap_n_components": 8,
+  "hdbscan_min_samples": 8,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_006",
+  "rationale": "Run 006 \u2014 wider UMAP (n=20, dim=8), auto topics, larger clusters"
+}

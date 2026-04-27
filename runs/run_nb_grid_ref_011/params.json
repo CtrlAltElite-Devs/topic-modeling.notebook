@@ -1,0 +1,10 @@
+{
+  "min_topic_size": 15,
+  "nr_topics": 20,
+  "umap_n_neighbors": 20,
+  "umap_n_components": 10,
+  "hdbscan_min_samples": 5,
+  "dataset": "augmented",
+  "run_id": "nb_grid_ref_011",
+  "rationale": "Run 011 \u2014 production baseline (wide UMAP n=20/dim=10 + nr_topics=20)"
+}
