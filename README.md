@@ -42,7 +42,7 @@ Drop the dataset files into `data/`. The same files used by the original CLI exp
 
 If you already have these elsewhere on disk (e.g. inside `../topic-modeling.faculytics/data/`), the main notebook contains an optional helper cell that copies from a `SOURCE_DIR` you specify — uncomment, set the path, run once.
 
-To regenerate `uc_dataset_filtered.json` from raw UC data, run the CLI version's `prepare_dataset.py` (this notebook does not reproduce that upstream step).
+`uc_dataset_filtered.json` is generated from `uc_dataset_20krows1.csv` by a sentiment-gating cell inside `topic_modeling.ipynb` (between the data presence check and the LaBSE device cell). It auto-runs when `DATASET = "real_filtered"` and the file is missing; call `build_sentiment_gated(overwrite=True, min_words=...)` to regenerate or sweep the threshold.
 
 ## Usage
 
@@ -84,7 +84,7 @@ Notebook RUN_IDs use the `nb_*` namespace (`nb_001`, `nb_grid_001`, ...) so they
 
 ## Differences from the CLI version
 
-- **Two notebooks instead of four CLI scripts.** `run_eval.py` → `topic_modeling.ipynb`, `auto_tune.py` → `grid_search.ipynb`. `prepare_dataset.py` and `generate_report.py` are not reproduced (run from the original repo if needed).
+- **Two notebooks instead of four CLI scripts.** `run_eval.py` → `topic_modeling.ipynb`, `auto_tune.py` → `grid_search.ipynb`. `prepare_dataset.py`'s sentiment gating is reproduced as a cell in `topic_modeling.ipynb`; `generate_report.py` is not reproduced (run from the original repo if needed).
 - **No Discord notifications.** Visualizations are inline in the notebook — no need for asynchronous review.
 - **Richer visualizations.** Drop-reason audit, pre/post word-count histograms, 2D embedding scatter, BERTopic intertopic-distance map, document map, hierarchical merge tree, similarity heatmap, metrics-vs-target bar chart, per-topic quality table.
 - **`runs/` instead of `experiments/`** for per-run artifacts (avoids confusing nesting under the parent `experiments/` folder). Same artifact layout, so the original `generate_report.py` works on these.
